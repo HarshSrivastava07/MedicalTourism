@@ -1,15 +1,15 @@
 function initMap() {
-    // The location of Uluru
-    const uluru = { lat: 12.9716, lng: 77.5946 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 12,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
+    // Latitude and Longitude
+    var myLatLng = {lat: -6.207690, lng: 106.985270};
 
+    var map = new google.maps.Map(document.getElementById('google-maps'), {
+        zoom: 17,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'South Jakarta, INA' // Title Location
+    });
+}
