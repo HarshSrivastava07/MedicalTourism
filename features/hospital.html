@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Hospitals &bull; Medical Tourism</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+    
+  <!-- <link rel="stylesheet" type="text/css" href="hospitalCss.css"> -->
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "b44aab47-3945-46d1-9505-c3be8fb048db", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "0f944c5b-ea15-48cc-b85e-ddcbadd4d0f1", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+          document.head.appendChild(t);
+        });
+      </script>
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +91 123456789</a>
+              <span class="divider">|</span>
+              <a href="#"><span class="mai-mail text-primary"></span> medical-tourism@help.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="#"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .topbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-primary">Medical</span>-Tourism</a>
+
+        <form action="#">
+          <div class="input-group input-navbar">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
+          </div>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctors.html">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>
+            </li>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+  
+
+  <div class="main">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="image/main4.jpg" alt="main1" style="position:relative; margin:auto; width:100%;">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+    <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!--  *******************  Search Box ******************    -->
+
+       <div class="search_box">
+          <div class="s_box">
+              <div class="search">
+                  <ul>              
+                     <li  class="span1_of_1 left">
+                         <h5>Treatment</h5>
+                          <div>
+                              <select id="country" onchange="change_country(this.value)" class="frm-field required">
+                                        <option value="allspec">- All Specialities -</option>
+                                        <option value="addiction">Addiction Treatment</option>
+                                        <option value="cancer">Cancer Treatment</option>
+                                        <option value="dental">Dental Care</option>
+                              </select>
+                         </div>                 
+                     </li>
+                     <li  class="span1_of_2 left">
+                         <h5>Country</h5>
+                        <div>
+                              <select id="country" onchange="change_country(this.value)" class="frm-field required">
+                                        <option value="allspec">- All Countries -</option>
+                                        <option value="addiction">Argentina</option>
+                                        <option value="cancer">India</option>
+                                        <option value="dental">China</option>
+                              </select>
+                         </div>     
+                     </li>
+
+                     <li class="span1_of_3">
+                            <div class="date_btn">
+                                   <button onclick="window.location.href='hospital.html'" type="button" >Search Medical Centers</button>
+                            </div>
+                     </li>
+                 </ul>
+             </div>
+          </div>
+      </div>
+
+<!--  *******************  Content Area 1 ******************    -->
+
+<div class="contentArea">
+    <div class="container">
+        <div class="title-com">
+            <h1>Cancer Treatment in India - Hospitals Guide</h1>
+            <span>Hospitals and medical centers in India who specialize in the treatment of cancer (oncology).</span>
+        </div>
+        <div class="leftSide">
+            <div class="leftCon">
+                <div role="tabpanel" class="tabpanel">
+                    <div class="cityBrowse businessListItem  hospotalcon">
+                        <div class="cityThamb">
+                            <img src="image/India/med6.jpg" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div class="cityDetails">
+                            <h2><a>Columbia Asia Hospitals</a></h2>
+                            <p class="para1">
+                            A 200-bed facility located at Gateway Center in Northwest Bangalore. The hospital opened in 2008 and provides comprehensive tertiary-level services, such as cardiac operations, orthopedics and neuroscience, as well as secondary-level medical care.
+                            </p>
+                            <ul class="city-list">
+                                <li><a>Private Hospital,&nbsp;</a></li>
+                                <li><a >Bangalore, India</a></li>
+                            </ul>
+                            <br><br>
+                            <button onclick = "window.location.href='http://www.columbiaasia.com/';" type="button" class="dropbtn">View profile</button>
+                            <button onclick = "contactus.html" type="button" class="dropbtn">Request Info</button>
+                        </div>
+                        <div class="viewDetails">
+                            <div id="divMainDiv" class="">
+                                <div class="viewTitle">
+                                    <h2>Listed Oncologists</h2>
+                                </div>
+                                <div class="surgeons">
+                                    <div class="surgeonsLt">
+                                        <div class="thambImg">
+                                            <a><img src="image/dr-govind-nandakumar.gif" alt="Dr. Govind Nandakumar"></a>
+                                        </div>
+                                        <h1><a>Dr. Govind Nandakumar</a></h1>
+                                        <p> Chief of Gastrointestinal Surgery</p>
+                                    </div>
+                                    <div class="surgeonsRt">
+                                        <div class="thambImg">
+                                            <a><img src="image/shalini-govil.jpg"></a>
+                                        </div>
+                                        <h1><a>Dr. Shalini Govil</a></h1>
+                                        <p> Senior Advisor and Quality Controller, Lead Abdominal Radiologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--  *******************  Content Area 2 ******************    -->
+
+<div class="contentArea">
+    <div class="container">
+        <div class="leftSide">
+            <div class="leftCon">
+                <div role="tabpanel" class="tabpanel">
+                    <div class="cityBrowse businessListItem  hospotalcon">
+                        <div class="cityThamb">
+                            <img src="image/India/apolloBangalore.jpg" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div class="cityDetails">
+                            <h2><a>Apollo Bangalore</a></h2>
+                            <p class="para1">
+                            The Apollo Hospitals Group is the pioneer of integrated healthcare delivery in India. With over 8500 beds across 50 hospitals within and outside India, the Apollo Hospitals Group is one of the largest healthcare groups in Asia and has some of the best hospitals in India.
+                            </p>
+                            <ul class="city-list">
+                                <li><a>Private Hospital,&nbsp;</a></li>
+                                <li><a >Bangalore, India</a></li>
+                            </ul>
+                            <br><br>
+                            <button type="button" class="dropbtn">View profile</button>
+                            <button type="button" class="dropbtn">Request Info</button>
+                        </div>
+                        <div class="viewDetails">
+                            <div id="divMainDiv" class="">
+                                <div class="viewTitle">
+                                    <h2>Listed Oncologists</h2>
+                                </div>
+                                <div class="surgeons">
+                                    <div class="surgeonsLt">
+                                        <div class="thambImg">
+                                            <a><img src="image/dr-govind-nandakumar.gif" alt="Dr. Govind Nandakumar"></a>
+                                        </div>
+                                        <h1><a>Dr. Govind Nandakumar</a></h1>
+                                        <p> Chief of Gastrointestinal Surgery</p>
+                                    </div>
+                                    <div class="surgeonsRt">
+                                        <div class="thambImg">
+                                            <a><img src="image/shalini-govil.jpg"></a>
+                                        </div>
+                                        <h1><a>Dr. Shalini Govil</a></h1>
+                                        <p> Senior Advisor and Quality Controller, Lead Abdominal Radiologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--  *******************  Content Area 3 ******************    -->
+<div class="contentArea">
+    <div class="container">
+        <div class="leftSide">
+            <div class="leftCon">
+                <div role="tabpanel" class="tabpanel">
+                    <div class="cityBrowse businessListItem  hospotalcon">
+                        <div class="cityThamb">
+                            <img src="image/India/chennai.png" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div class="cityDetails">
+                            <h2><a>Neuro Life Hospital</a></h2>
+                            <p class="para1">
+                            Neuro Life hospital is the brain child of Dr.A. Gunasekaran. M.D., D.M. (Neuro), a renowned neurologist in Chennai. He has passion about patients and immense involvement in neurology. He has completed M.B.B.S. in 1993 and M.D. in 1998. Then he practiced in a corporate hospital in Salem. He has got the first rank in state level super-speciality entrance examination and he did D.M. (Neurology).
+                            </p>
+                            <ul class="city-list">
+                                <li><a>Private Hospital,&nbsp;</a></li>
+                                <li><a >Chennai, India</a></li>
+                            </ul>
+                            <br><br>
+                            <button type="button" class="dropbtn">View profile</button>
+                            <button type="button" class="dropbtn">Request Info</button>
+                        </div>
+                        <div class="viewDetails">
+                            <div id="divMainDiv" class="">
+                                <div class="viewTitle">
+                                    <h2>Listed Oncologists</h2>
+                                </div>
+                                <div class="surgeons">
+                                    <div class="surgeonsLt">
+                                        <div class="thambImg">
+                                            <a><img src="image/dr-govind-nandakumar.gif" alt="Dr. Govind Nandakumar"></a>
+                                        </div>
+                                        <h1><a>Dr. Govind Nandakumar</a></h1>
+                                        <p> Chief of Gastrointestinal Surgery</p>
+                                    </div>
+                                    <div class="surgeonsRt">
+                                        <div class="thambImg">
+                                            <a><img src="image/shalini-govil.jpg"></a>
+                                        </div>
+                                        <h1><a>Dr. Shalini Govil</a></h1>
+                                        <p> Senior Advisor and Quality Controller, Lead Abdominal Radiologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--  *******************  Content Area 4 ******************    -->
+<div class="contentArea">
+    <div class="container">
+        <div class="leftSide">
+            <div class="leftCon">
+                <div role="tabpanel" class="tabpanel">
+                    <div class="cityBrowse businessListItem  hospotalcon">
+                        <div class="cityThamb">
+                            <img src="image/India/delhi.jpg" style="max-width: 100%; max-height: 100%;">
+                        </div>
+
+                        <div class="cityDetails">
+                            <h2><a>Fortis Hospital Delhi</a></h2>
+                            <p class="para1">
+                            Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.
+                            </p>
+                            <ul class="city-list">
+                                <li><a>Private Hospital,&nbsp;</a></li>
+                                <li><a >Delhi, India</a></li>
+                            </ul>
+                            <br><br>
+                            <button type="button" class="dropbtn">View profile</button>
+                            <button type="button" class="dropbtn">Request Info</button>
+                        </div>
+                        <div class="viewDetails">
+                            <div id="divMainDiv" class="">
+                                <div class="viewTitle">
+                                    <h2>Listed Oncologists</h2>
+                                </div>
+                                <div class="surgeons">
+                                    <div class="surgeonsLt">
+                                        <div class="thambImg">
+                                            <a><img src="image/dr-govind-nandakumar.gif" alt="Dr. Govind Nandakumar"></a>
+                                        </div>
+                                        <h1><a>Dr. Govind Nandakumar</a></h1>
+                                        <p> Chief of Gastrointestinal Surgery</p>
+                                    </div>
+                                    <div class="surgeonsRt">
+                                        <div class="thambImg">
+                                            <a><img src="image/shalini-govil.jpg"></a>
+                                        </div>
+                                        <h1><a>Dr. Shalini Govil</a></h1>
+                                        <p> Senior Advisor and Quality Controller, Lead Abdominal Radiologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--  *******************  Top Speciality Area ******************    -->
+
+<div class="top_sp">
+        <h2>Top Specialties</h2>
+        <ul>
+            <li>
+                <a href="cancer.html">
+                    <img src="image/cancer.jpg" alt="cancer" >
+                    <p>Cancer Treatment</p>
+                </a>
+            </li>
+            <li>
+                <a href="cardio.html">
+                    <img src="image/cardiac.jpg" alt="cancer" >
+                    <p>Cardiac Surgery</p>
+                </a>
+            </li>
+            <li>
+                <a href="cosmetic.html">
+                    <img src="image/cosmetic.jpg" alt="cancer" >
+                    <p>Cosmetic Surgery</p>
+                </a>
+            </li>
+            <li>
+                <a href="fertility.html">
+                    <img src="image/fertility.jpg" alt="cancer" >
+                    <p>Fertility Treatment</p>
+                </a>
+            </li>
+            <li>
+                <a href="neurology.html">
+                    <img src="image/neuro.jpg" alt="cancer" >
+                    <p>Neurology</p>
+                </a>
+            </li>
+            <li>
+                <a href="orthopedic.html">
+                    <img src="image/ortho.jpg" alt="cancer" >
+                    <p>Orthopedic Surgery</p>
+                </a>
+            </li> 
+        </ul>
+</div>
+
+  
+  
+
+  <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/banner-pattern.svg);">
+    <div class="container py-5 py-lg-0">
+      <div class="row align-items-center">
+        <div class="col-lg-4 wow zoomIn">
+          <div class="img-banner d-none d-lg-block">
+            <img src="../assets/img/mobile_app.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8 wow fadeInRight">
+          <h1 class="font-weight-normal mb-3">Get easy access of all features using Medical-Tourism Application</h1>
+          <a href="#"><img src="../assets/img/google_play.svg" alt=""></a>
+          <a href="#" class="ml-2"><img src="../assets/img/app_store.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .banner-home -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Protection</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>More</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Join as Doctors</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Our partner</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Indian Hospital Association</a></li>
+            <li><a href="#">Indian Hotel Association</a></li>
+            <li><a href="#">Indian Interpreter Association</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact</h5>
+          <p class="footer-link mt-2">Aryabhatta Block,MSRIT,Bangalore India </p>
+          <a href="#" class="footer-link">123456789</a>
+          <a href="#" class="footer-link">medicaltourism@india.com</a>
+
+          <h5 class="mt-3">Social Media</h5>
+          <div class="footer-sosmed mt-3">
+            <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <p id="copyright">Copyright &copy; 2021 <a href="#" target="_blank">medicaltourism.com</a>. All right reserved</p>
+    </div>
+  </footer>
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="../assets/vendor/wow/wow.min.js"></script>
+
+<script src="../assets/js/theme.js"></script>
+  
+</body>
+</html>
